@@ -39,8 +39,9 @@ public class CropApplet extends JApplet implements MouseListener, MouseMotionLis
         addMouseListener(this);
         addMouseMotionListener(this);
 
-        setImage("/Users/merter/Desktop/Hucreler/1.jpg");
+        setImage("/Users/merter/Desktop/Tensorflow Object Detection/Hucreler/1.jpg");
         setCounter(0);
+
 
     }
 
@@ -114,8 +115,10 @@ public class CropApplet extends JApplet implements MouseListener, MouseMotionLis
 
     @Override
     public void mouseMoved(MouseEvent e) {
-        pointerX = e.getX() - (int)(pointerW/2);
-        pointerY = e.getY() - (int)(pointerH/2);
+        pointerX = e.getX() - (int) (pointerW / 2);
+        pointerY = e.getY() - (int) (pointerH / 2);
         repaint();
     }
+
+
 }
